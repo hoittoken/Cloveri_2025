@@ -53,7 +53,7 @@
 | 6 | start | дата начала стажировки | date | уникальна для каждой стажировки | 2025-01-15 |
 | 7 | end | дата окончания стажировки | date | уникальна для каждой стажировки | 2025-04-28 |
 | 8 | grades | оценки по ключевым навыкам | numeric (2,1) <br> или real | уникальны для каждой роли (всего около 20) <br>диапазон [0.0, 10.0] | 4.2, 6.0, 3.7|
-| 9 | skills | навыки и инструменты | text | уникальны для каждой роли (всего около 40) | Pycaret, Random Forest, Optuna |
+| 9 | tools | навыки и инструменты | boolean | уникальны для каждого сочетания роли и стажировки | Pycaret, Random Forest, Optuna |
 
 [наверх](#стажировка-в-cloveri-2025-год)
 
@@ -61,7 +61,7 @@
 
 Можно представить следующую [структуру](https://dbdiagram.io/d/677eccc20231eca729926414) базы данных PostgreSQL:
 
-<img src="https://github.com/hoittoken/Cloveri_2025/blob/7ac2d0d5ed559fc7aef161b4f1e696a4fa4a5101/images/structure_v.1.2.png" width="600" />
+<img src="https://github.com/hoittoken/Cloveri_2025/blob/b5be376c3c7c1eb6819714eac9af202807f2162c/images/structure_v.1.3.png" width="800" />
 
 ## Описание используемых таблиц
 
