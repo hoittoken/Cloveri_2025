@@ -1,4 +1,4 @@
-![cloveri start logo](https://github.com/hoittoken/Cloveri_2025/blob/b606b85ad34d934e82f9ced2a83c7e7c9fe4a3e1/images/cloveri_start.png)
+<img src="https://github.com/hoittoken/Cloveri_2025/blob/a8a7865557d997f55c99dc3add4f0efa1681d88d/images/cloveri_start.png" width="600" />
 
 # Стажировка в Cloveri 2025 год.
 
