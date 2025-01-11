@@ -1,6 +1,6 @@
 import datetime
 from sqlalchemy import Boolean, Table, Column, Float, String, Date, MetaData, ForeignKey
-from sqlalchemy.orm import Mapped, mapped_column
+from sqlalchemy.orm import Mapped, mapped_column, relationship
 from database import Base, str_100, str_320
 
 # for using in ORM mod
@@ -16,6 +16,8 @@ class InternsOrm(Base):
     start_date: Mapped[datetime.datetime]
     end_date: Mapped[datetime.datetime]
     notes: Mapped[str | None]
+
+    #grades: Mapped[list["GradesOrm"]] = relationship()
 
 class GradesOrm(Base):
     __tablename__ = "grades"
@@ -40,6 +42,8 @@ class GradesOrm(Base):
     skill18: Mapped[float | None]
     skill19: Mapped[float | None]
     skill20: Mapped[float | None]
+
+    #username: Mapped["InternsOrm"] = relationship()
 
 class ToolsOrm(Base):
     __tablename__ = "tools"

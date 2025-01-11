@@ -248,7 +248,6 @@ class SyncOrm:
             for model in interns:
                 print(model)
 
-
     @staticmethod
     def select_interns_email(intern_email: str = 'work.aubakirov@gmail.com'):
         with session_factory() as session:
@@ -257,8 +256,8 @@ class SyncOrm:
             #interns = result.all() # кортежи
             interns = result.scalars().all() # модели
             for model in result:
-                print(model)
-
+                print(model)    
+    
     @staticmethod
     def update_interns(intern_id: str = 'f3', new_name: str = 'Ricardo Blanco'):
         with session_factory() as session:

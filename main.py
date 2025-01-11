@@ -9,5 +9,4 @@ SyncOrm.insert_interns()
 SyncOrm.insert_grades()
 SyncOrm.insert_tools()
 
-SyncOrm.select_interns()
-#SyncOrm.update_interns()
+SyncOrm.update_interns()
